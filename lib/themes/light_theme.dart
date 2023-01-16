@@ -4,11 +4,12 @@ import 'package:flutter/services.dart';
 import '../utils/app_palette.dart';
 import '../utils/dimensions.dart';
 import '../utils/styles.dart';
+
 ThemeData lightTheme = ThemeData(
   fontFamily: 'Montserrat',
   scaffoldBackgroundColor: AppPalette.backgroundColor, //done
   appBarTheme: AppBarTheme(
-    backgroundColor: AppPalette.backgroundColor,
+    color: Colors.transparent,
     centerTitle: true,
     elevation: 0,
     iconTheme: const IconThemeData(
@@ -21,8 +22,10 @@ ThemeData lightTheme = ThemeData(
       fontSize: Dimensions.fontSizeExtraLarge,
     ),
     systemOverlayStyle: const SystemUiOverlayStyle(
-        statusBarColor: Colors.white,
-        statusBarIconBrightness: Brightness.dark),
+        systemStatusBarContrastEnforced: false,
+        statusBarBrightness: Brightness.light,
+        statusBarColor: Colors.transparent,
+        statusBarIconBrightness: Brightness.light),
   ),
   disabledColor: const Color(0xFFBABFC4),
   backgroundColor: AppPalette.backgroundColor,

@@ -27,6 +27,12 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
     fontSize: Dimensions.fontSizeDefault,
   );
+  static final TextStyle montserratSemiBold = TextStyle(
+    color: AppPalette.headerTextColor,
+    fontFamily: Fonts.montserrat,
+    fontWeight: FontWeight.w600,
+    fontSize: Dimensions.fontSizeDefault,
+  );
   static final TextStyle montserratBold = TextStyle(
     color: AppPalette.headerTextColor,
     fontFamily: Fonts.montserrat,
