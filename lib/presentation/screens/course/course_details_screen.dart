@@ -1,13 +1,11 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:course_page_task/lib/presentation/base/error_message.dart';
-import 'package:course_page_task/lib/presentation/base/loading_widget.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
 import '../../../business_logic/cubit/course_cubit.dart';
 import '../../../data/repository/course_repo.dart';
 import '../../../data/webservices/course_webservices.dart';
 import '../../../utils/images.dart';
-import '../../../utils/transparent_image.dart';
+import '../../base/error_message.dart';
+import '../../base/loading_widget.dart';
 
 class CourseDetailsScreen extends StatelessWidget {
   CourseDetailsScreen({Key? key}) : super(key: key);

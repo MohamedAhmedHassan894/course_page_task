@@ -1,11 +1,11 @@
+import 'helpers/app_router.dart';
+import 'helpers/dio_helper.dart';
+import 'helpers/logger_helper.dart';
+import 'themes/light_theme.dart';
+import 'utils/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'lib/helpers/app_router.dart';
-import 'lib/helpers/dio_helper.dart';
-import 'lib/helpers/logger_helper.dart';
-import 'lib/themes/light_theme.dart';
-import 'lib/utils/strings.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
