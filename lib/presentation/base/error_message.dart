@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../utils/styles.dart';
 
 class ErrorMessage extends StatelessWidget {
@@ -9,7 +10,9 @@ class ErrorMessage extends StatelessWidget {
       child: Text(
         'Something wrong happen! , please Try again',
         textAlign: TextAlign.center,
-        style: AppTextStyles.montserratMedium,
+        style: AppTextStyles.montserratLight.copyWith(
+          fontSize: 30.sp,
+        ),
       ),
     );
   }

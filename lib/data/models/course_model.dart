@@ -71,6 +71,7 @@ class CourseModel {
         reservTypes?.add(ReservTypes.fromJson(v));
       });
     }
+
   }
   int? id;
   String? title;

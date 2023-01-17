@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../utils/dimensions.dart';
 
 class DividerLine extends StatelessWidget {
-  const DividerLine({Key? key, this.height = 2, this.widthPercent = .4})
+  const DividerLine({Key? key, this.height = 4, this.widthPercent = .4})
       : super(key: key);
   final double height;
   final double widthPercent;
@@ -11,6 +11,7 @@ class DividerLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.symmetric(vertical: 62.r),
       color: Colors.grey[200],
       height: height.h,
       width: MediaQuery.of(context).size.width * widthPercent,

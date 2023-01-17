@@ -6,14 +6,15 @@ import 'utils/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   LoggerHelper.init();
   DioHelper.init();
-  runApp(MyApp(
-    appRouter: AppRouter(),
-  ));
+  runApp(
+    MyApp(
+      appRouter: AppRouter(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(414, 896),
+      designSize: const Size(1080, 2277),
       builder: (context, _) => MaterialApp(
         debugShowCheckedModeBanner: false,
         localizationsDelegates: const [
